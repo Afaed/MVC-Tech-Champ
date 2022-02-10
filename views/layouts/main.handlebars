@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, intitial-scale=1.0">
+        <title> Just TEch NEws</title>
+        <link rel= "stylesheet" href ="/stylesheets/style.css">
+    </head>
+    <body>
+        <div class = "wrapper">
+        <header>
+          <h1>
+                <a href = "/">Just Tech News</a>
+            </h1>
+            <nav>
+                {{#if loggedIn}}
+                <button id = "logout" class "btn-no-style">logout</button>
+                <a href = "/login"> login </a>
+                {{/if}}
+            </nav>
+        </header>
+        <main>
+            <script src = "/"></script>
+            <form class ="signup-form">
+                <div>
+                <label for = "username-signup">Username: </label>
+                </div>
+                <div>
+                    <label for = "email-signup">email:</label>
+                    <inout type = "password" id = "password-signup" />
+                </div>
+                <div>
+                    <button type = "submit">signup-form</button>
+                </div>
+            </form>
+            {{{ body }}}
+            <article>
+         {{<a href="/post/{{post.id}}"></a>}}
+        </article>
+        </main>
+        <footer>
+            Thanks for visiting!
+        </footer>
+        </div>
+    </body>
+</html>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
