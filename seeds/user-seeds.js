@@ -1,7 +1,9 @@
 const { User } = require('../models');
 const userData = [{
+    
     username: "jojo_9",
-    password: "testtest2"
+    password: "testtest2",
+    github: "Don Julio"
 }]
 
 const {format_plural} = require('../utils/helpers')

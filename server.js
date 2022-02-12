@@ -10,7 +10,6 @@ const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ helpers })
 
 const session = require('express-session');
-const session = require('express-session');
 
 const app = express();
 
